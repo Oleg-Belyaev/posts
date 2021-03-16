@@ -12,6 +12,18 @@ function App() {
     console.log(true);
   }
 
+  // useEffect(() => {
+  //   // получаем данные с сервера
+  //   fetch('https://api.nomoreparties.co/emoji-critic-rus')
+  //   .then((res) => {
+  //     return res.json();
+  //   }).then((parsedReviews) => {
+  //     // форматируем данные и, используя setData, обновляем текущий стейт
+  //     const reviews = Object.values(parsedReviews);
+  //     setReviews(reviews);
+  //   })
+  // }, []);
+
   return (
     <div className="App">
       <Header onAddPost={handleAddPostClick}/>
