@@ -12,17 +12,17 @@ function App() {
     console.log(true);
   }
 
-  // useEffect(() => {
-  //   // получаем данные с сервера
-  //   fetch('https://api.nomoreparties.co/emoji-critic-rus')
-  //   .then((res) => {
-  //     return res.json();
-  //   }).then((parsedReviews) => {
-  //     // форматируем данные и, используя setData, обновляем текущий стейт
-  //     const reviews = Object.values(parsedReviews);
-  //     setReviews(reviews);
-  //   })
-  // }, []);
+  useEffect(() => {
+    // получаем данные с сервера
+    fetch('https://my-json-server.typicode.com/Oleg-Belyaev/posts/posts')
+    .then((res) => {
+      return res.json();
+    }).then((parsedPosts) => {
+      // форматируем данные и, используя setData, обновляем текущий стейт
+      const posts = Object.values(parsedPosts);
+      setPosts(posts);
+    })
+  }, []);
 
   return (
     <div className="App">
