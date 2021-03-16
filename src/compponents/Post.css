@@ -1,0 +1,52 @@
+.posts__item {
+  list-style-type: none;
+  font-size: 32px;
+  line-height: 37px;
+  padding: 20px 50px;
+  background-color: #E8E8E8;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  visibility: hidden;
+  display: none;
+}
+
+.posts__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.post__item_inactive {
+  visibility: visible;
+  display: block;
+}
+
+.posts__body {
+  font-size: 20px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.element__button-remove {
+  background: url(../../src/images/bucket.svg) center no-repeat;
+  border: none;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.button {
+  padding: 0;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  transition: opacity .5s linear;
+  margin-top: 10px;
+}
+
+.button:hover {
+  opacity: 0.6;
+}

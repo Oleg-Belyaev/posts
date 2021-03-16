@@ -7,7 +7,7 @@ function Header (props) {
     <header className="header">
       <h1 className="header__title">Посты</h1>
       <div>
-        <button type="button" className="header__button" onClick={props.onAddNotes}>+</button>
+        <button type="button" className="header__button" onClick={props.onAddPost}>+</button>
       </div>
     </header>
   )
